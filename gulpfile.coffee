@@ -8,10 +8,6 @@ boolifyString = require 'boolify-string'
 exec = require('child_process').exec
 
 paths =
-  lint: [
-    './gulpfile.coffee'
-    './src/**/*.coffee'
-  ]
   watch: [
     './gulpfile.coffee'
     './src/**/*.coffee'
@@ -25,11 +21,6 @@ paths =
   source: [
     './src/**/*.coffee'
   ]
-
-gulp.task 'lint:old', ->
-  gulp.src paths.lint
-    .pipe $.coffeelint('./coffeelint.json')
-    .pipe $.coffeelint.reporter()
 
 gulp.task 'lint', ->
   exec 'npm run lint', (error, stdout, stderr) ->
