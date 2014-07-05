@@ -42,6 +42,7 @@
   "main": "index.coffee",
   "scripts": {
     "test": "gulp test",
-    "coveralls": "gulp test && cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "coveralls": "gulp test && cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "lint": "coffeelint -f coffeelint.json *.json src/*.coffee test/*.coffee"
   }
 }

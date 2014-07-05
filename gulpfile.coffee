@@ -32,7 +32,10 @@ gulp.task 'lint:old', ->
     .pipe $.coffeelint.reporter()
 
 gulp.task 'lint', ->
-  exec('npm run lint', (error, stdout, stderr) ->
+  exec 'npm run lint', (error, stdout, stderr) ->
+    console.error(error) if error?
+    console.error(stderr) if stderr?
+    console.log(stdout) if stdout?
 
 gulp.task 'clean', del.bind(null, ['./compile'])
 gulp.task 'clean:coverage', del.bind(null, ['./coverage'])
