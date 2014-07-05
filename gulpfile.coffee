@@ -5,12 +5,9 @@ $ = (require 'gulp-load-plugins') lazy: false
 del = require 'del'
 es = require 'event-stream'
 boolifyString = require 'boolify-string'
+exec = require('child_process').exec
 
 paths =
-  lint: [
-    './gulpfile.coffee'
-    './src/**/*.coffee'
-  ]
   watch: [
     './gulpfile.coffee'
     './src/**/*.coffee'
@@ -25,11 +22,11 @@ paths =
     './src/**/*.coffee'
   ]
 
-
 gulp.task 'lint', ->
-  gulp.src paths.lint
-    .pipe $.coffeelint('./coffeelint.json')
-    .pipe $.coffeelint.reporter()
+  exec 'npm run lint', (error, stdout, stderr) ->
+    console.error(error) if error?
+    console.error(stderr) if stderr?
+    console.log(stdout) if stdout?
 
 gulp.task 'clean', del.bind(null, ['./compile'])
 gulp.task 'clean:coverage', del.bind(null, ['./coverage'])
