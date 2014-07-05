@@ -2,7 +2,7 @@
 
 Are you ready? Let's Party!
 
-If hubot has launched/restarted, then this shown.
+If hubot has launched/restarted, then It's Party Time.
 
 See [`src/lets-party.coffee`](src/lets-party.coffee) for full documentation.
 

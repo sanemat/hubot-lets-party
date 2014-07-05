@@ -1,18 +1,14 @@
 # Description
-#   A hubot script that does the things
+#   If hubot has launched/restarted, then It's Party Time!
 #
 # Configuration:
-#   LIST_OF_ENV_VARS_TO_SET
+#   HUBOT_LETS_PARTY_BE_QUIET boolean if you want to quiet
+#   HUBOT_LETS_PARTY_ROOM string room_name/room_id
 #
 # Commands:
-#   hubot hello - <what the respond trigger does>
-#   orly - <what the hear trigger does>
-#
-# Notes:
-#   <optional notes required for the script>
-#
+##
 # Author:
-#   [@<org>]
+#   sanemat
 
 module.exports = (robot) ->
   boolifyString = require 'boolify-string'

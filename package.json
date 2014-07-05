@@ -1,8 +1,8 @@
 {
   "name": "hubot-lets-party",
-  "description": "A hubot script that does the things",
+  "description": "If hubot has launched/restarted, then It's Party Time!",
   "version": "0.0.0",
-  "author": " <o.gata.ken@gmail.com>",
+  "author": "sanemat <o.gata.ken@gmail.com>",
   "license": "MIT",
   "keywords": [
     "hubot",
@@ -10,10 +10,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-lets-party.git"
+    "url": "git://github.com/sanemat/hubot-lets-party.git"
   },
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-lets-party/issues"
+    "url": "https://github.com/sanemat/hubot-lets-party/issues"
   },
   "dependencies": {
     "boolify-string": "^0.1.0",
