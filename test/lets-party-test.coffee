@@ -6,6 +6,9 @@ describe 'lets-party', ->
     @robot =
       respond: sinon.spy()
       messageRoom: sinon.spy()
+    sinon.sandbox.create(process.env, 'HUBOT_LETS_PARTY_ROOM', 'theRoom')
+  afterEach ->
+    sinon.sandbox.restore()
 
     require('../src/lets-party')(@robot)
 
