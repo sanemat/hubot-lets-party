@@ -1,6 +1,8 @@
 # hubot-lets-party
 
-A hubot script that does the things
+Are you ready? Let's Party!
+
+If hubot has launched/restarted, then this shown.
 
 See [`src/lets-party.coffee`](src/lets-party.coffee) for full documentation.
 
@@ -14,11 +16,4 @@ Then add **hubot-lets-party** to your `external-scripts.json`:
 
 ```json
 ["hubot-lets-party"]
-```
-
-## Sample Interaction
-
-```
-user1>> hubot hello
-hubot>> hello!
 ```
