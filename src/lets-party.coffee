@@ -15,8 +15,13 @@
 #   [@<org>]
 
 module.exports = (robot) ->
-  robot.respond /hello/, (msg) ->
-    msg.reply "hello!"
+  boolifyString = require 'boolify-string'
+  quiet = boolifyString process.env.HUBOT_BE_QUIET_AT_PARTY
+  room = process.env.HUBOT_PARTY_ROOM
+  messageText = "Okay....let's PARTYYYYYYYYYY!"
+  messageImage = 'http://image.itmedia.co.jp/nl/articles/1208/03/ah_IYH.jpg'
 
-  robot.hear /orly/, ->
-    msg.send "yarly"
+  if quiet
+    robot.messageRoom(room, messageText)
+  else
+    robot.messageRoom(room, messageText, messageImage, messageImage, messageImage)
