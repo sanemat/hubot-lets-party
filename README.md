@@ -20,10 +20,10 @@ Then add **hubot-lets-party** to your `external-scripts.json`:
 ```
 
 [npm-url]: https://npmjs.org/package/hubot-lets-party
-[npm-image]: https://badge.fury.io/js/hubot-lets-party.svg
+[npm-image]: http://img.shields.io/npm/v/hubot-lets-party.svg?style=flat
 [travis-url]: https://travis-ci.org/sanemat/hubot-lets-party
-[travis-image]: https://travis-ci.org/sanemat/hubot-lets-party.svg?branch=master
+[travis-image]: http://img.shields.io/travis/sanemat/hubot-lets-party/master.svg?style=flat
 [daviddm-url]: https://david-dm.org/sanemat/hubot-lets-party.svg?theme=shields.io
-[daviddm-image]: https://david-dm.org/sanemat/hubot-lets-party
+[daviddm-image]: http://img.shields.io/david/sanemat/hubot-lets-party.svg?style=flat
 [coveralls-url]: https://coveralls.io/r/sanemat/hubot-lets-party
-[coveralls-image]: https://coveralls.io/repos/sanemat/hubot-lets-party/badge.png
+[coveralls-image]: http://img.shields.io/coveralls/sanemat/hubot-lets-party/master.svg?style=flat
