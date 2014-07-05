@@ -24,4 +24,10 @@ module.exports = (robot) ->
   if quiet
     robot.messageRoom(room, messageText)
   else
-    robot.messageRoom(room, messageText, messageImage, messageImage, messageImage)
+    robot.messageRoom(
+      room
+      messageText
+      messageImage
+      messageImage
+      messageImage
+    )
