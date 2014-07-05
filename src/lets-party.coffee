@@ -22,7 +22,10 @@ module.exports = (robot) ->
   messageImage = 'http://image.itmedia.co.jp/nl/articles/1208/03/ah_IYH.jpg'
 
   if quiet
-    robot.messageRoom(room, messageText)
+    robot.messageRoom(
+      room
+      messageText
+    )
   else
     robot.messageRoom(
       room
