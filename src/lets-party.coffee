@@ -17,19 +17,10 @@ module.exports = (robot) ->
   unless process.env.HUBOT_LETS_PARTY_ROOM?
     robot.logger.warning "HUBOT_LETS_PARTY_ROOM is not set"
 
-  messageText = "Okay....let's PARTYYYYYYYYYY!"
-  messageImage = 'http://image.itmedia.co.jp/nl/articles/1208/03/ah_IYH.jpg'
+  text = "Okay....let's PARTYYYYYYYYYY!"
+  image = 'http://image.itmedia.co.jp/nl/articles/1208/03/ah_IYH.jpg'
 
   if quiet
-    robot.messageRoom(
-      room
-      messageText
-    )
+    robot.messageRoom room, text
   else
-    robot.messageRoom(
-      room
-      messageText
-      messageImage
-      messageImage
-      messageImage
-    )
+    robot.messageRoom room, text, image, image, image
