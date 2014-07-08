@@ -1,7 +1,7 @@
 {
   "name": "hubot-lets-party",
   "description": "If hubot has launched/restarted, then It's Party Time!",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "sanemat <o.gata.ken@gmail.com>",
   "license": "MIT",
   "keywords": [
