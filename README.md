@@ -1,6 +1,8 @@
 # hubot-lets-party
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage Status][coveralls-image]][coveralls-url]
 
+![let's party](https://cloud.githubusercontent.com/assets/75448/3508072/e2344726-0685-11e4-8450-d6b5e313a158.png)
+
 Are you ready? Let's Party!
 
 If hubot has launched/restarted, then It's Party Time.
